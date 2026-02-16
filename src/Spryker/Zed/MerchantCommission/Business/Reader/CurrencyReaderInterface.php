@@ -12,7 +12,7 @@ use Generated\Shared\Transfer\CurrencyCollectionTransfer;
 interface CurrencyReaderInterface
 {
     /**
-     * @param list<string> $currencyCodes
+     * @param array<string> $currencyCodes
      *
      * @return \Generated\Shared\Transfer\CurrencyCollectionTransfer
      */

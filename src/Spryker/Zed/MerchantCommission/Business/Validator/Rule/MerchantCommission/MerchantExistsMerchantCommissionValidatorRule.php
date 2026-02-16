@@ -94,7 +94,7 @@ class MerchantExistsMerchantCommissionValidatorRule implements MerchantCommissio
     /**
      * @param \ArrayObject<array-key, \Generated\Shared\Transfer\MerchantCommissionTransfer> $merchantCommissionTransfers
      *
-     * @return array<string|int, list<string>>
+     * @return array<string|int, array<string>>
      */
     protected function getMerchantReferencesGroupedByMerchantCommissionEntityIdentifier(ArrayObject $merchantCommissionTransfers): array
     {
@@ -109,9 +109,9 @@ class MerchantExistsMerchantCommissionValidatorRule implements MerchantCommissio
     }
 
     /**
-     * @param array<string|int, list<string>> $merchantReferencesGroupedByEntityIdentifier
+     * @param array<string|int, array<string>> $merchantReferencesGroupedByEntityIdentifier
      *
-     * @return list<string>
+     * @return array<string>
      */
     protected function getUniqueMerchantReferences(array $merchantReferencesGroupedByEntityIdentifier): array
     {
@@ -120,7 +120,7 @@ class MerchantExistsMerchantCommissionValidatorRule implements MerchantCommissio
 
     /**
      * @param \Generated\Shared\Transfer\ErrorCollectionTransfer $errorCollectionTransfer
-     * @param list<string> $nonExistingMerchantReferences
+     * @param array<string> $nonExistingMerchantReferences
      * @param string|int $entityIdentifier
      *
      * @return \Generated\Shared\Transfer\ErrorCollectionTransfer

@@ -92,8 +92,8 @@ class MerchantCommissionMerchantUpdater implements MerchantCommissionMerchantUpd
 
     /**
      * @param \Generated\Shared\Transfer\MerchantCommissionTransfer $merchantCommissionTransfer
-     * @param list<int> $merchantIdsToAssign
-     * @param list<int> $merchantIdsToUnAssign
+     * @param array<int> $merchantIdsToAssign
+     * @param array<int> $merchantIdsToUnAssign
      *
      * @return void
      */

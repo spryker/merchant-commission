@@ -85,8 +85,8 @@ class MerchantCommissionStoreUpdater implements MerchantCommissionStoreUpdaterIn
 
     /**
      * @param \Generated\Shared\Transfer\MerchantCommissionTransfer $merchantCommissionTransfer
-     * @param list<int> $storeIdsToAssign
-     * @param list<int> $storeIdsToUnAssign
+     * @param array<int> $storeIdsToAssign
+     * @param array<int> $storeIdsToUnAssign
      *
      * @return void
      */

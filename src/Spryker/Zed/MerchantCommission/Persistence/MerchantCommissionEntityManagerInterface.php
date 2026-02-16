@@ -32,7 +32,7 @@ interface MerchantCommissionEntityManagerInterface
 
     /**
      * @param int $idMerchantCommission
-     * @param list<int> $storeIds
+     * @param array<int> $storeIds
      *
      * @return void
      */
@@ -40,7 +40,7 @@ interface MerchantCommissionEntityManagerInterface
 
     /**
      * @param int $idMerchantCommission
-     * @param list<int> $merchantIds
+     * @param array<int> $merchantIds
      *
      * @return void
      */
@@ -73,7 +73,7 @@ interface MerchantCommissionEntityManagerInterface
 
     /**
      * @param int $idMerchantCommission
-     * @param list<int> $storeIds
+     * @param array<int> $storeIds
      *
      * @return void
      */
@@ -81,7 +81,7 @@ interface MerchantCommissionEntityManagerInterface
 
     /**
      * @param int $idMerchantCommission
-     * @param list<int> $merchantIds
+     * @param array<int> $merchantIds
      *
      * @return void
      */

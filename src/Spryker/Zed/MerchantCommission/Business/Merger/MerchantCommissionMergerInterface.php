@@ -10,7 +10,7 @@ namespace Spryker\Zed\MerchantCommission\Business\Merger;
 interface MerchantCommissionMergerInterface
 {
     /**
-     * @param array<string, list<\Generated\Shared\Transfer\CollectedMerchantCommissionTransfer>> $collectedMerchantCommissionTransfersGroupedByGroupKey
+     * @param array<string, array<\Generated\Shared\Transfer\CollectedMerchantCommissionTransfer>> $collectedMerchantCommissionTransfersGroupedByGroupKey
      *
      * @return array<string, \Generated\Shared\Transfer\CollectedMerchantCommissionTransfer>
      */

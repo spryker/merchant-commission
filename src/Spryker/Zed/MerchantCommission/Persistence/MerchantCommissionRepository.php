@@ -166,7 +166,7 @@ class MerchantCommissionRepository extends AbstractRepository implements Merchan
     /**
      * @param int $idMerchantCommission
      *
-     * @return list<int>
+     * @return array<int>
      */
     public function getStoreIdsRelatedToMerchantCommission(int $idMerchantCommission): array
     {
@@ -181,7 +181,7 @@ class MerchantCommissionRepository extends AbstractRepository implements Merchan
     /**
      * @param int $idMerchantCommission
      *
-     * @return list<int>
+     * @return array<int>
      */
     public function getMerchantIdsRelatedToMerchantCommission(int $idMerchantCommission): array
     {
@@ -194,9 +194,9 @@ class MerchantCommissionRepository extends AbstractRepository implements Merchan
     }
 
     /**
-     * @param list<string> $merchantCommissionKeys
+     * @param array<string> $merchantCommissionKeys
      *
-     * @return list<string>
+     * @return array<string>
      */
     public function getExistingMerchantCommissionKeys(array $merchantCommissionKeys): array
     {

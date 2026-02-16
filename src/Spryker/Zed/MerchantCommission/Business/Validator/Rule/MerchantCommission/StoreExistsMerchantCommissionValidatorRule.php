@@ -90,7 +90,7 @@ class StoreExistsMerchantCommissionValidatorRule implements MerchantCommissionVa
     /**
      * @param \ArrayObject<array-key, \Generated\Shared\Transfer\MerchantCommissionTransfer> $merchantCommissionTransfers
      *
-     * @return array<string|int, list<string>>
+     * @return array<string|int, array<string>>
      */
     protected function getStoreNamesGroupedByMerchantCommissionEntityIdentifier(ArrayObject $merchantCommissionTransfers): array
     {
@@ -105,9 +105,9 @@ class StoreExistsMerchantCommissionValidatorRule implements MerchantCommissionVa
     }
 
     /**
-     * @param array<string|int, list<string>> $storeNamesGroupedByEntityIdentifier
+     * @param array<string|int, array<string>> $storeNamesGroupedByEntityIdentifier
      *
-     * @return list<string>
+     * @return array<string>
      */
     protected function getUniqueStoreNames(array $storeNamesGroupedByEntityIdentifier): array
     {
@@ -116,7 +116,7 @@ class StoreExistsMerchantCommissionValidatorRule implements MerchantCommissionVa
 
     /**
      * @param \Generated\Shared\Transfer\ErrorCollectionTransfer $errorCollectionTransfer
-     * @param list<string> $nonExistingStoreNames
+     * @param array<string> $nonExistingStoreNames
      * @param string|int $entityIdentifier
      *
      * @return \Generated\Shared\Transfer\ErrorCollectionTransfer

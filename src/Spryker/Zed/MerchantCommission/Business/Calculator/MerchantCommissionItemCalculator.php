@@ -43,7 +43,7 @@ class MerchantCommissionItemCalculator implements MerchantCommissionItemCalculat
      * @param \Generated\Shared\Transfer\MerchantCommissionCalculationRequestTransfer $merchantCommissionCalculationRequestTransfer
      * @param list<\Generated\Shared\Transfer\MerchantCommissionTransfer> $merchantCommissionTransfers
      *
-     * @return list<\Generated\Shared\Transfer\MerchantCommissionCalculationItemTransfer>
+     * @return array<int, \Generated\Shared\Transfer\MerchantCommissionCalculationItemTransfer>
      */
     public function calculateMerchantCommissionForItems(
         MerchantCommissionCalculationRequestTransfer $merchantCommissionCalculationRequestTransfer,

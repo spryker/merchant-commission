@@ -36,9 +36,9 @@ class MerchantCommissionToStoreFacadeBridge implements MerchantCommissionToStore
     }
 
     /**
-     * @param list<string> $storeNames
+     * @param array<string> $storeNames
      *
-     * @return list<\Generated\Shared\Transfer\StoreTransfer>
+     * @return array<\Generated\Shared\Transfer\StoreTransfer>
      */
     public function getStoreTransfersByStoreNames(array $storeNames): array
     {

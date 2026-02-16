@@ -92,7 +92,7 @@ class CurrencyExistsMerchantCommissionValidatorRule implements MerchantCommissio
     /**
      * @param \ArrayObject<array-key, \Generated\Shared\Transfer\MerchantCommissionTransfer> $merchantCommissionTransfers
      *
-     * @return array<string|int, list<string>>
+     * @return array<string|int, array<string>>
      */
     protected function getCurrencyCodesGroupedByMerchantCommissionEntityIdentifier(ArrayObject $merchantCommissionTransfers): array
     {
@@ -111,9 +111,9 @@ class CurrencyExistsMerchantCommissionValidatorRule implements MerchantCommissio
     }
 
     /**
-     * @param array<string|int, list<string>> $currencyCodesGroupedByEntityIdentifier
+     * @param array<string|int, array<string>> $currencyCodesGroupedByEntityIdentifier
      *
-     * @return list<string>
+     * @return array<string>
      */
     protected function getUniqueCurrencyCodes(array $currencyCodesGroupedByEntityIdentifier): array
     {
@@ -122,7 +122,7 @@ class CurrencyExistsMerchantCommissionValidatorRule implements MerchantCommissio
 
     /**
      * @param \Generated\Shared\Transfer\ErrorCollectionTransfer $errorCollectionTransfer
-     * @param list<string> $nonExistingCurrencyCodes
+     * @param array<string> $nonExistingCurrencyCodes
      * @param string|int $entityIdentifier
      *
      * @return \Generated\Shared\Transfer\ErrorCollectionTransfer

@@ -13,7 +13,7 @@ interface MerchantCommissionAdderInterface
 {
     /**
      * @param \Generated\Shared\Transfer\MerchantCommissionTransfer $merchantCommissionTransfer
-     * @param list<\Generated\Shared\Transfer\MerchantCommissionCalculationRequestItemTransfer> $collectedMerchantCommissionCalculationRequestItems
+     * @param array<\Generated\Shared\Transfer\MerchantCommissionCalculationRequestItemTransfer> $collectedMerchantCommissionCalculationRequestItems
      * @param array<int, \Generated\Shared\Transfer\CollectedMerchantCommissionTransfer> $collectedMerchantCommissionTransfers
      *
      * @return array<int, \Generated\Shared\Transfer\CollectedMerchantCommissionTransfer>

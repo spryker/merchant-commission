@@ -12,14 +12,14 @@ use Generated\Shared\Transfer\StoreCollectionTransfer;
 interface StoreReaderInterface
 {
     /**
-     * @param list<int> $storeIds
+     * @param array<int> $storeIds
      *
      * @return \Generated\Shared\Transfer\StoreCollectionTransfer
      */
     public function getStoreCollectionByStoreIds(array $storeIds): StoreCollectionTransfer;
 
     /**
-     * @param list<string> $storeNames
+     * @param array<string> $storeNames
      *
      * @return \Generated\Shared\Transfer\StoreCollectionTransfer
      */

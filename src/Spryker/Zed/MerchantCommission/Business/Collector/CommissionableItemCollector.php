@@ -107,7 +107,7 @@ class CommissionableItemCollector implements CommissionableItemCollectorInterfac
      * @param \Generated\Shared\Transfer\MerchantCommissionCalculationRequestTransfer $merchantCommissionCalculationRequestTransfer
      * @param array<\Generated\Shared\Transfer\MerchantCommissionTransfer> $sortedMerchantCommissionTransfers
      *
-     * @return list<\Generated\Shared\Transfer\CollectedMerchantCommissionTransfer>
+     * @return array<int, \Generated\Shared\Transfer\CollectedMerchantCommissionTransfer>
      */
     protected function collectCommissionableItemsForMerchantCommissionGroup(
         MerchantCommissionCalculationRequestTransfer $merchantCommissionCalculationRequestTransfer,

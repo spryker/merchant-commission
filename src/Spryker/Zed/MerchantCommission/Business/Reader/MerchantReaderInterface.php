@@ -12,14 +12,14 @@ use Generated\Shared\Transfer\MerchantCollectionTransfer;
 interface MerchantReaderInterface
 {
     /**
-     * @param list<int> $merchantIds
+     * @param array<int> $merchantIds
      *
      * @return \Generated\Shared\Transfer\MerchantCollectionTransfer
      */
     public function getMerchantCollectionByMerchantIds(array $merchantIds): MerchantCollectionTransfer;
 
     /**
-     * @param list<string> $merchantReferences
+     * @param array<string> $merchantReferences
      *
      * @return \Generated\Shared\Transfer\MerchantCollectionTransfer
      */

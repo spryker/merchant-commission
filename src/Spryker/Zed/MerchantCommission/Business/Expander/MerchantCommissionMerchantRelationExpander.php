@@ -76,7 +76,7 @@ class MerchantCommissionMerchantRelationExpander implements MerchantCommissionMe
     /**
      * @param \ArrayObject<array-key, \Generated\Shared\Transfer\MerchantCommissionTransfer> $merchantCommissionTransfers
      *
-     * @return list<int>
+     * @return array<int>
      */
     protected function extractMerchantIds(ArrayObject $merchantCommissionTransfers): array
     {

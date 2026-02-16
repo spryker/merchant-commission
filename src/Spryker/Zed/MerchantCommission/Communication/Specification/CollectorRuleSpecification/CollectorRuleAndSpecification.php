@@ -36,7 +36,7 @@ class CollectorRuleAndSpecification implements CollectorRuleSpecificationInterfa
     /**
      * @param \Spryker\Shared\Kernel\Transfer\TransferInterface $collectableTransfer
      *
-     * @return list<\Spryker\Shared\Kernel\Transfer\TransferInterface>
+     * @return array<\Spryker\Shared\Kernel\Transfer\TransferInterface>
      */
     public function collect(TransferInterface $collectableTransfer): array
     {
